@@ -9,8 +9,17 @@
 /* Begin PBXBuildFile section */
 		6C29021D1BA93BD700972EE3 /* BatteryManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6C29021C1BA93BD700972EE3 /* BatteryManager.h */; };
 		6C29021F1BA93BD700972EE3 /* BatteryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C29021E1BA93BD700972EE3 /* BatteryManager.m */; };
-		6C2902251BA93E5400972EE3 /* BatteryManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 6C29021C1BA93BD700972EE3 /* BatteryManager.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C955D2E1BA951DC00FAADDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C955D2A1BA951DC00FAADDB /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6C2902171BA93BD700972EE3 /* CopyFiles */ = {
@@ -29,6 +38,7 @@
 		6C2902191BA93BD700972EE3 /* libRCTBattery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTBattery.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C29021C1BA93BD700972EE3 /* BatteryManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BatteryManager.h; sourceTree = "<group>"; };
 		6C29021E1BA93BD700972EE3 /* BatteryManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BatteryManager.m; sourceTree = "<group>"; };
+		6C955D2A1BA951DC00FAADDB /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 		6C2902101BA93BD700972EE3 = {
 			isa = PBXGroup;
 			children = (
+				6C955D2A1BA951DC00FAADDB /* React.xcodeproj */,
 				6C29021B1BA93BD700972EE3 /* RCTBattery */,
 				6C29021A1BA93BD700972EE3 /* Products */,
 			);
@@ -65,6 +76,14 @@
 				6C29021E1BA93BD700972EE3 /* BatteryManager.m */,
 			);
 			path = RCTBattery;
+			sourceTree = "<group>";
+		};
+		6C955D2B1BA951DC00FAADDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C955D2F1BA951DC00FAADDB /* libReact.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +131,12 @@
 			mainGroup = 6C2902101BA93BD700972EE3;
 			productRefGroup = 6C29021A1BA93BD700972EE3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6C955D2B1BA951DC00FAADDB /* Products */;
+					ProjectRef = 6C955D2A1BA951DC00FAADDB /* React.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6C2902181BA93BD700972EE3 /* RCTBattery */,
@@ -119,12 +144,21 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		6C955D2F1BA951DC00FAADDB /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = 6C955D2E1BA951DC00FAADDB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6C2902151BA93BD700972EE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C2902251BA93E5400972EE3 /* BatteryManager.h in Sources */,
 				6C29021F1BA93BD700972EE3 /* BatteryManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
