@@ -18,6 +18,6 @@
     "battery"
   ],
   "peerDependencies": {
-    "react-native": "^0.4.0"
+    "react-native": ">=0.4 || 0.11.0"
   }
 }
