@@ -1,6 +1,6 @@
 {
   "name": "react-native-battery",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "author": {
     "name": "Olajide",
     "email": "olajidesoftware@gmail.com",
@@ -16,8 +16,5 @@
     "react-component",
     "ios",
     "battery"
-  ],
-  "peerDependencies": {
-    "react-native": "^0.4.0"
-  }
+  ]
 }
