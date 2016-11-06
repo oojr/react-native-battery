@@ -1,6 +1,6 @@
 {
   "name": "react-native-battery",
-  "version": "0.1.8",
+  "version": "0.1.12",
   "author": {
     "name": "Olajide",
     "email": "olajidesoftware@gmail.com",
@@ -17,4 +17,5 @@
     "ios",
     "battery"
   ]
+
 }
