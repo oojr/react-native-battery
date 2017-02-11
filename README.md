@@ -5,11 +5,7 @@ A React Native module that returns the battery level/status of a device
 ### Add it to your iOS project
 
 1. Run `npm install react-native-battery --save`
-2. Open your project in XCode, right click on `Libraries` and click `Add
-   Files to "Your Project Name"` [(Screenshot)](http://url.brentvatne.ca/jQp8) then [(Screenshot)](http://url.brentvatne.ca/1gqUD).
-3. Add `libRCTBattery.a` to `Build Phases -> Link Binary With Libraries`
-   [(Screenshot)](http://url.brentvatne.ca/17Xfe).
-4. Whenever you want to use it within React code now you can: `var BatteryManager = require('NativeModules').BatteryManager;`
+2. `react-native link`
 
 
 ## Example
@@ -47,7 +43,7 @@ var RCTBattery = React.createClass({
   componentWillUnmount: function(){
     this._subscription.remove();
   },
-  
+
   render: function() {
     var chargingText;
     if(this.state.charging){
@@ -86,6 +82,5 @@ var styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('RCTBattery', () => RCTBattery);
-  
-```
 
+```
