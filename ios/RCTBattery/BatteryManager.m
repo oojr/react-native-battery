@@ -5,9 +5,9 @@
 //  Created by Olajide Ogundipe Jr on 9/15/15.
 //
 
-#import "RCTBridge.h"
-#import "RCTConvert.h"
-#import "RCTEventDispatcher.h"
+#import <React/RCTBridge.h>
+#import <React/RCTConvert.h>
+#import <React/RCTEventDispatcher.h>
 
 #import "BatteryManager.h"
 
