@@ -1,11 +1,43 @@
 # react-native-battery
 
-A React Native module that returns the battery level/status of a device
+A cross-platform React Native module that returns the battery level/status of a device. Supports iOS and Android.
 
-### Add it to your iOS project
+## Package Installation
+`npm install react-native-battery --save`
 
-1. Run `npm install react-native-battery --save`
-2. `react-native link`
+### iOS automatic setup
+*   `react-native link`
+
+
+### Android setup
+*   `react-native link` may work, but it sometimes munges files. If automatic installation fails, use the following manual steps.
+*   Add to `MainApplication.java`:
+```
+import com.rctbattery.BatteryManagerPackage;
+// ...
+
+@Override
+protected List<ReactPackage> getPackages() {
+  return Arrays.<ReactPackage>asList(
+      new MainReactPackage(),
+        new BatteryManagerPackage(),
+        // ...
+  );
+}
+```
+*   Add to `android/settings.gradle`:
+```
+include ':react-native-battery'
+project(':react-native-battery').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-battery/android')
+//...
+```
+*   Add to `android/app/build.gradle`:
+```
+dependencies {
+  compile project(':react-native-battery')
+  //...
+}
+```
 
 
 ## Example
