@@ -57,6 +57,7 @@ RCT_EXPORT_METHOD(updateBatteryLevel:(RCTResponseSenderBlock)callback)
     
     if(batteryState == UIDeviceBatteryStateFull){
         currentLevel = [NSNumber numberWithFloat:(batteryLevel * 100)];
+        isPlugged = TRUE;
     }
     
     if(batteryState == UIDeviceBatteryStateUnplugged){
