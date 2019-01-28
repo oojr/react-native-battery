@@ -6,11 +6,11 @@ A cross-platform React Native module that returns the battery level/status of a 
 `npm install react-native-battery --save`
 
 ### iOS automatic setup
-*   `react-native link`
+*   `react-native link react-native-battery`
 
 
 ### Android setup
-*   `react-native link` may work, but it sometimes munges files. If automatic installation fails, use the following manual steps.
+*   `react-native link react-native-battery` may work, but it sometimes munges files. If automatic installation fails, use the following manual steps.
 *   Add to `MainApplication.java`:
 ```
 import com.rctbattery.BatteryManagerPackage;
